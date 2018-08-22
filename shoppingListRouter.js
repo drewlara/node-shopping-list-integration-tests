@@ -12,7 +12,7 @@ ShoppingList.create("peppers", false);
 // when the root of this router is called with GET, return
 // all current ShoppingList items
 router.get("/", (req, res) => {
-  res.json(ShoppingList.get());
+  let test = res.json(ShoppingList.get());
 });
 
 // when a new shopping list item is posted, make sure it's
